@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #7c506a;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  overflow:auto;
+}
+
+.container {
+  width: 80%;
+  max-width: 600px; 
+  background-color: rgb(49, 12, 31); 
+  box-shadow: 2px  4px 6px rgba(200, 190, 196, 0.859); /* Optional: Add a shadow for depth */
+  border: 2px solid rgba(242, 240, 240, 0.743);
+  border-radius: 12px;
+  padding: 10px;
+  overflow: auto;
+}
+
+.box {
+  width: 95%;
+  height: 180px;
+  padding: 10px;
+  margin: 0;
+  margin-bottom: 20px;
+  background-color: #854551;
+  border: 2px solid #ccc;
+  border-radius: 8px; 
+  box-shadow: 
+      5px 5px 15px rgba(139, 132, 132, 0.3), /* Outer shadow */
+      inset 2px 2px 5px rgba(255, 255, 255, 0.5), /* Inner shadow */
+      inset -0px -0px 3px rgba(255, 255, 255, 0.5); /* Highlight */
+}
+
+
+.channel-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+ 
+}
+
+.circle {
+  width: 100px; 
+  height: 60px; 
+  background-color: #854551;
+  border-radius: 50%; 
+  border: 2px solid #ccc;
+  box-shadow: 4px 4px 10px rgba(230, 218, 218, 0.3);
+
+}
+
+.comments-section {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.add-comment {
+  display: flex;
+  align-items: center;
+  width: 53vh;
+  height: 15px;
+  padding: 10px;
+  border: 2px solid rgb(187, 171, 171);
+  margin: 0;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #854551;
+  box-shadow: 0 2px 2px rgba(246, 245, 245, 0.886);
+
+}
+.comment{
+  display: flex;
+  align-items: center;
+  width: 75%;
+  height: 5px;
+  padding: 10px;
+  border: 2px solid rgb(187, 171, 171);
+  margin: 0;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #854551;
+}
+
+
+@keyframes slowMove {
+  0% { transform: translateZ(-1px) scale(2) translateX(0); }
+  100% { transform: translateZ(-1px) scale(2) translateX(-200px); }
+}
+@media screen and (max-width:650px) {
+  .container{
+    width: 80%;
+    max-width: 300px; 
+    background-color: rgb(74, 12, 44); 
+    border-radius: 8px;
+    box-shadow: 2px  4px 6px rgba(200, 190, 196, 0.859); 
+    border: 2px solid rgba(242, 240, 240, 0.743);
+    border-radius: 12px;
+    padding: 10px;
+  }
+    .box{
+      display: flex;
+      width: 75%;
+      height: 130px;
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 8px; 
+      box-shadow: 
+          5px 5px 15px rgba(139, 132, 132, 0.3), /* Outer shadow */
+          inset 2px 2px 5px rgba(255, 255, 255, 0.5), /* Inner shadow */
+          inset -0px -0px 3px rgba(255, 255, 255, 0.5); /* Highlight */
+    }
+    
+      .circle {
+        width: 100px; 
+        height: 100px;
+    }
+    .add-comment{
+      display: flex;
+      width: 60vh;
+      height: 20px;
+
+    }
+    .comment{
+      display: flex;
+      width: 75%;
+      height: 15px;
+
+    }
+  
+}
