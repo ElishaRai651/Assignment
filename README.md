@@ -1,0 +1,1 @@
+This is simple html page with css. Making div and applying css properties to show more stylist div container. javascript is also used to dragging the container. This interface will might intergrate to any website projects in te future.
